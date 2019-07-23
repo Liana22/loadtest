@@ -11,7 +11,9 @@ public class BasicController {
     @GetMapping("")
     ResponseEntity<?> getApplications() {
         for (int i = 0; i < Integer.MAX_VALUE; i++) {
-            assert true;
+            for (int j = 0; j < Integer.MAX_VALUE; j++) {
+                assert true;
+            }
         }
         return new ResponseEntity<>(HttpStatus.OK);
     }
