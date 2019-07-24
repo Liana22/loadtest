@@ -10,11 +10,11 @@ public class BasicController {
 
     @GetMapping("")
     ResponseEntity<?> getApplications() {
-        for (int i = 0; i < Integer.MAX_VALUE; i++) {
-            for (int j = 0; j < Integer.MAX_VALUE; j++) {
-                assert true;
-            }
-        }
+        (new LoadThread()).start();
+        (new LoadThread()).start();
+        (new LoadThread()).start();
+        (new LoadThread()).start();
+        (new LoadThread()).start();
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
