@@ -15,6 +15,10 @@ public class BasicController {
         (new LoadThread()).start();
         (new LoadThread()).start();
         (new LoadThread()).start();
+        (new LoadThread()).start();
+        (new LoadThread()).start();
+        (new LoadThread()).start();
+        (new LoadThread()).start();
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
