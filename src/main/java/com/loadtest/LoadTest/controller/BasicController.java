@@ -10,57 +10,9 @@ public class BasicController {
 
     @GetMapping("")
     ResponseEntity<?> getApplications() {
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
-        (new LoadThread()).start();
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            (new LoadThread()).start();
+        }
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
