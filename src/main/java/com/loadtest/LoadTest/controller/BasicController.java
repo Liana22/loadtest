@@ -10,7 +10,7 @@ public class BasicController {
 
     @GetMapping("")
     ResponseEntity<?> getApplications() {
-        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+        for (int i = 0; i < 50; i++) {
             (new LoadThread()).start();
         }
         return new ResponseEntity<>(HttpStatus.OK);
